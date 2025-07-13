@@ -1,86 +1,80 @@
-# Specialist Doctor Recommendation and Appointment Booking System
+# 🩺 MediScope – Specialist Doctor Recommendation & Appointment Booking System
 
-This is a specialized doctor recommendation and appointment booking system built using Next.js. It helps users to input their symptoms, predict potential diseases, and book appointments with recommended doctors.
+**MediScope** is a full-stack web application designed to help users predict diseases based on symptoms and book appointments with the most suitable specialists. It provides secure access for patients, doctors, and admins with tailored dashboards for each role.
 
-## Features
+---
 
-### For Users:
+## ✨ Features
 
-- **User Registration/Login:** Allow users to register and log in securely.
-- **Symptom Input:** Provide a form for users to input their symptoms.
-- **Disease Prediction:** Utilize machine learning to predict potential diseases based on symptoms.
-- **Doctor Recommendation:** Recommend specialized doctors based on predicted diseases.
-- **Appointment Booking:** Allow users to book appointments with recommended doctors.
-- **Appointment Management:** View, reschedule, or cancel appointments.
+### 👤 User Functionality
+- **User Registration & Login** with JWT security
+- **Symptom Input Form**
+- **AI-Powered Disease Prediction**
+- **Doctor Recommendation** based on predicted disease
+- **Appointment Booking System**
+- **Appointment Tracking** – Reschedule or cancel
+- **Feedback and Ratings System**
 
-### For Doctors:
+### 👨‍⚕️ Doctor Functionality
+- **Doctor Account Creation and Login**
+- **Doctor Dashboard** – View upcoming appointments
+- **Patient Medical History Access**
+- **Manage Appointment Status**
 
-- **Doctor Registration/Login:** Allow doctors to register and log in securely.
-- **Appointment Management:** Display upcoming appointments and manage them efficiently.
-- **Patient Information:** Access patient profiles and medical history for appointments.
+### 🛠️ Admin Functionality
+- **Admin Dashboard**
+- **User and Doctor Management**
+- **Global Appointment Monitoring**
+- **Analytics and Reports**
+- **System Settings Configuration**
 
+### 💡 General Features
+- ✅ Responsive UI (Mobile & Desktop)
+- 🔒 Role-Based Access Control (JWT)
+- 📬 Email/Notification Support
+- 💳 Payment Gateway Integration
+- 🔍 Search by Doctor, Location, Specialization
 
+---
 
-### For Admins:
+## 💻 Technologies Used
 
-- **Admin Dashboard:** Provide an overview of platform performance and user statistics.
-- **User and Doctor Management:** Manage user accounts and doctor profiles.
-- **Appointment Monitoring:** Monitor and manage appointments across the platform.
-- **Analytics and Reporting:** Generate reports on user activity and appointment trends.
-- **System Configuration:** Configure application settings and preferences.
+| Layer         | Technology                         |
+|---------------|-------------------------------------|
+| Frontend      | Next.js (React) + Tailwind CSS      |
+| Backend       | Node.js + Express.js                |
+| Authentication| JWT, bcrypt                         |
+| Database      | MongoDB + Mongoose                  |
+| ML Prediction | Python (optional integration)       |
+| Deployment    | Vercel (Frontend), Render (Backend) |
+| Payment       | Razorpay / Stripe                   |
 
-### General Features:
+---
 
-- **Security Measures:** Implement robust security measures to protect user data.
-- **Responsive Design:** Develop a user interface that works seamlessly across devices.
-- **Feedback and Ratings:** Allow users to provide feedback and ratings for doctors.
-- **Search Functionality:** Enable users to search for doctors by specialty and location.
-- **Notifications:** Send notifications for appointment reminders and updates.
-- **Payment Integration:** Integrate payment gateways for appointment fees.
+## 🚀 Installation
 
-## Technologies Used
-
-- **Next.js**: Frontend framework for building React applications.
-- **Machine Learning**: Used for disease prediction based on symptoms.
-- **Authentication**: Secure user authentication using JWT tokens.
-- **Database**: Store user, doctor, and appointment data in a secure database.
-- **Payment Gateway**: Integrate a payment gateway for handling appointment fees.
-
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/mahafujul/MedNexa.git
-cd MedNexa
-```
-
-2. Install dependencies:
+### 🔧 1. Clone Repository
 
 ```bash
+git clone https://github.com/Anoymous786/MediScope.git
+cd MediScope
+
+📦 2. Install Frontend
+cd client
 npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
-
-3. Start the development server:
-
-```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend runs at: http://localhost:3000
 
-4. Visit `http://localhost:3000` in your browser to view the application.
+🔧 3. Install Backend
+cd ../server
+npm install
+Then create a .env file inside /server:
 
-## Contributing
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/mediscope
+JWT_SECRET=yourSecretKey
+Run the backend:
 
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+npm run dev
+Backend runs at: http://localhost:5000
