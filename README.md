@@ -1,6 +1,6 @@
 # 🩺 MediScope – Specialist Doctor Recommendation & Appointment Booking System
 
-**MediScope** is a full-stack web application designed to help users predict diseases based on symptoms and book appointments with the most suitable specialists. It provides secure access for patients, doctors, and admins with tailored dashboards for each role.
+**MediScope** is a full-stack web application designed and developed by **Utkarsh Singh** to help users predict diseases based on symptoms and book appointments with the most suitable specialists. It provides secure access for patients, doctors, and admins with tailored dashboards for each role.
 
 ---
 
@@ -58,23 +58,42 @@
 ```bash
 git clone https://github.com/Anoymous786/MediScope.git
 cd MediScope
+```
 
-📦 2. Install Frontend
+### 📦 2. Install Frontend
+```bash
 cd client
 npm install
 npm run dev
-Frontend runs at: http://localhost:3000
+```
+Frontend runs at: [http://localhost:3000](http://localhost:3000)
 
-🔧 3. Install Backend
+### 🔧 3. Install Backend
+```bash
 cd ../server
 npm install
-Then create a .env file inside /server:
-
+```
+Create a `.env` file inside `/server`:
+```
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/mediscope
 JWT_SECRET=yourSecretKey
+```
 Run the backend:
-
-
+```bash
 npm run dev
-Backend runs at: http://localhost:5000
+```
+Backend runs at: [http://localhost:5000](http://localhost:5000)
+
+---
+
+## ✍️ Author
+
+**Utkarsh Singh**  
+GitHub: [Anoymous786](https://github.com/Anoymous786)  
+Email: [utsi22ise@cmrit.ac.in](mailto:utsi22ise@cmrit.ac.in)  
+LinkedIn: [linkedin.com/in/utkarsh746](https://www.linkedin.com/in/utkarsh746)
+
+---
+
+> ✅ Built by Utkarsh Singh to demonstrate full-stack proficiency in React/Next.js and Node.js, aligned with job roles requiring frontend/backend development experience.
